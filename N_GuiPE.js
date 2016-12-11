@@ -1527,7 +1527,7 @@ FontPE.getDefaultImage = function (str, color) {
     var default8;
     
     if (typeof FontPE.cache["default"] !== "object") {
-        default8 = android.graphics.BitmapFactory.decodeStream(ModPE.openInputStreamFromTexturePack("images/font/default8.png"));
+        default8 = android.graphics.BitmapFactory.decodeStream(ModPE.openInputStreamFromTexturePack("resourcepacks/vanilla/client/font/default8.png"));
         FontPE.cache["default"] = default8;
     } else {
         default8 = FontPE.cache["default"];
@@ -1589,7 +1589,7 @@ FontPE.getGlyphImage = function (str, color) {
                 hex = "0" + hex;
             hex = hex.toUpperCase();
             if (typeof FontPE.cache[hex] !== "object") {
-                glyph = android.graphics.BitmapFactory.decodeStream(ModPE.openInputStreamFromTexturePack("images/font/glyph_"+hex+".png"));
+                glyph = android.graphics.BitmapFactory.decodeStream(ModPE.openInputStreamFromTexturePack("resourcepacks/vanilla/client/font/glyph_"+hex+".png"));
                 FontPE.cache[hex] = glyph;
             } else {
                 glyph = FontPE.cache[hex];
